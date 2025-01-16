@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7c46fe4b-9410-4a5c-9eb1-909041354aec">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM `perancangan_tabel_data_kry`]]>
+	</queryString>
+	<field name="nopeg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_peg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tlp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gaji" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="24" width="100" height="20" uuid="4d09e06a-7472-4a6b-aadb-29560e032a65"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[laporan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="2" width="43" height="20" uuid="4690418e-24ac-4ca0-b3a4-cbfd044447e7"/>
+				<text><![CDATA[nopeg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="2" width="47" height="20" uuid="2b604db3-cc1a-4188-b7ce-d3cb73c7136c"/>
+				<text><![CDATA[Nama_peg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="2" width="18" height="20" uuid="e44f51b1-5b66-44a3-92ad-78c4f818bdec"/>
+				<text><![CDATA[jk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="2" width="40" height="20" uuid="6a32b464-0e17-4441-9346-2e7fee3960d5"/>
+				<text><![CDATA[tgl_lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="2" width="67" height="20" uuid="7acd2347-2078-475a-aff1-9748166d63cb"/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="2" width="48" height="20" uuid="6bfeec84-6ae5-4234-9ab4-428372d44894"/>
+				<text><![CDATA[tlp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="2" width="59" height="20" uuid="c46382cd-4e3f-4add-af83-448867f5ab31"/>
+				<text><![CDATA[gaji]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="2" width="100" height="20" uuid="73ec4581-6e73-445e-9cde-9b8904b8be00"/>
+				<text><![CDATA[jabatan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="2" width="43" height="20" uuid="7bce9762-fd5a-4ab5-b99c-4fec6627401a"/>
+				<textFieldExpression><![CDATA[$F{nopeg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="2" width="47" height="20" uuid="711292e4-592d-4e03-9881-cfdde8d96740"/>
+				<textFieldExpression><![CDATA[$F{Nama_peg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="2" width="18" height="20" uuid="7925d2cb-9343-4894-be9e-79c95ae51bf4"/>
+				<textFieldExpression><![CDATA[$F{jk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="4" width="40" height="20" uuid="ef3171b7-37bb-4e96-bac6-cfffa55cfcfe"/>
+				<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="6" width="67" height="20" uuid="9905f601-71ce-4c75-8206-06aeebda78ec"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="5" width="48" height="20" uuid="d34e7cbb-df1a-497e-a83c-24753f2ec032"/>
+				<textFieldExpression><![CDATA[$F{tlp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="6" width="59" height="20" uuid="676cdd70-f547-49c1-97ab-fdaa9bb10866"/>
+				<textFieldExpression><![CDATA[$F{gaji}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="8" width="100" height="20" uuid="003aa4b2-b226-4de5-80cd-5ef11744968e"/>
+				<textFieldExpression><![CDATA[$F{jabatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
